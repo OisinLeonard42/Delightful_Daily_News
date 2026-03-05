@@ -7,9 +7,9 @@
 :root {
     /* ========== Colour Palette ========== */
     /* Primary Earth-Inspired Colours */
-    --color-primary: #6b705c;    /* Stone (primary UI colour) */
-    --color-secondary: #a5a58d;  /* Sand (backgrounds, inputs) */
-    --color-tertiary: #b7b7a4;   /* Clay (surface neutral) */
+    --color-primary: #000000;    /* Stone (primary UI colour) */
+    --color-secondary: #f00b31;  /* Sand (backgrounds, inputs) */
+    --color-tertiary: #f80b79;   /* Clay (surface neutral) */
 
     /* Accent & Feedback Colours */
     --color-accent: #588157;     /* Moss Green (buttons, links) */
@@ -25,11 +25,11 @@
     --text-contrast: #ffffff;    /* Light text on dark backgrounds */
 
     /* Backgrounds & Surfaces */
-    --color-background: #fefae0; /* Light parchment background */
-    --color-surface: #f5f5f0;    /* Panels, cards */
-    --color-border: #dcdccf;     /* Subtle earthy border */
+    --color-background: #00ffdd; /* Light parchment background */
+    --color-surface: #92c4b5;    /* Panels, cards */
+    --color-border: #00ff80;     /* Subtle earthy border */
     --color-overlay: rgba(0, 0, 0, 0.25);
-    --color-code-bg: #f0efeb;
+    --color-code-bg: #dddddd;
 
     /* Interactive States */
     --color-border-hover: var(--color-accent);
