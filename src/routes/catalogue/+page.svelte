@@ -38,9 +38,10 @@
 </script>
 
 
-<svelte:head>
-    <title>Catalogue | Starter Kit</title>
-</svelte:head>
+<!--
+<svelte:head> 
+<title>Catalogue | Starter Kit</title>
+</svelte:head>-->
 
 
 <section class="catalogue-wrapper">

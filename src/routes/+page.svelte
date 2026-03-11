@@ -23,9 +23,9 @@
 </script>
 
 
-<svelte:head>
+<!--<svelte:head>
     <title>Starter Kit</title>
-</svelte:head>
+</svelte:head>-->
 
 
 <!-- Page Container -->

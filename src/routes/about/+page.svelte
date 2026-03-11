@@ -33,14 +33,14 @@
 </svelte:head>
 
 
-<section class="intro section-hero">
+<!--<section class="intro section-hero">
     <h1>About the Starter Kit</h1>
     <p>
         This project was designed as a learning platform and design reference for aspiring front-end developers.
         It introduces foundational concepts in web design, UI/UX principles, accessibility, and mindful development,
         rooted in philosophies of balance, self-discipline, and continuous growth.
     </p>
-</section>
+</section> -->
 
 <section class="principles section-shinobi">
     <h2>11 Principles of the Shinobi</h2>
