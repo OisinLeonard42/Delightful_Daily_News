@@ -101,7 +101,7 @@
         background-image: url('/images/backgrounds/zen-hero.png');
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; 
         background-blend-mode: overlay;
         background-color: rgba(255, 255, 255, 0.75);
     }
