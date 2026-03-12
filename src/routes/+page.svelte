@@ -98,7 +98,7 @@
         padding: var(--space-xl) var(--space-md);
         border-radius: var(--radius-md);
         box-shadow: var(--shadow-sm);
-        background-image: url('/images/backgrounds/zen-hero.png');
+        background-image: url('/images/backgrounds/news-concept-good-news-on-digital-paper-background.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; 
@@ -139,10 +139,10 @@
     /* Featured Section */
     .featured {
         padding: 0 var(--space-md);
-        background-image: url('/images/backgrounds/rice-texture.png');
-        background-size: 200px;
+        background-image: url('/images/backgrounds/static/news-concept-good-news-on-digital-paper-background.jpg');
+        background-size: 500px;
         background-repeat: repeat;
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: rgb(248, 249, 250);
     }
 
     .featured h2 {
@@ -188,7 +188,6 @@
         background-color: var(--color-background);
         border-top: var(--border-default);
         background: linear-gradient(to top, var(--color-surface), transparent);
-        background-image: url('/images/backgrounds/scroll-teaser.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

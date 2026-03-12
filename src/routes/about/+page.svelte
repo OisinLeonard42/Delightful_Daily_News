@@ -33,14 +33,14 @@
 </svelte:head>
 
 
-<!--<section class="intro section-hero">
+<section class="intro section-hero">
     <h1>About the Starter Kit</h1>
     <p>
         This project was designed as a learning platform and design reference for aspiring front-end developers.
         It introduces foundational concepts in web design, UI/UX principles, accessibility, and mindful development,
         rooted in philosophies of balance, self-discipline, and continuous growth.
     </p>
-</section> -->
+</section> 
 
 <section class="principles section-shinobi">
     <h2>11 Principles of the Shinobi</h2>
@@ -78,7 +78,7 @@
         </figure>
 
         <figure>
-            <img src={asset("/images/about/bamboo.png")} alt="Tranquil Path through Bamboo Forest" />
+           <img src={asset("/images/about/bamboo.png")} alt="Tranquil Path through Bamboo Forest" />
             <figcaption>
                 A winding path through bamboo — evoking balance, flexibility, and quiet persistence.
             </figcaption>
@@ -130,7 +130,7 @@
 
     /* Section: Hero */
     .section-hero {
-        background-image: url("/images/backgrounds/bamboo-enso-hero.png");
+        background-image: url("/images/backgrounds/static/news-concept-good-news-on-digital-paper-background.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -156,7 +156,7 @@
 
     /* Section: Gallery */
     .section-gallery {
-        background-image: url("/images/backgrounds/rice-texture.png");
+        background-image: url("/images/backgrounds/static/news-concept-good-news-on-digital-paper-background.png");
         background-size: 800px;
         background-repeat: repeat;
         background-position: bottom center;

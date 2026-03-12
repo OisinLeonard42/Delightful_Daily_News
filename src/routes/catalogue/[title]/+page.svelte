@@ -159,7 +159,7 @@
 	.related {
 		margin-top: var(--space-xl);
 		padding: var(--space-lg) var(--space-md);
-		background-image: url('/images/backgrounds/rice-texture.png');
+		background-image: url('/images/backgrounds/news-concept-good-news-on-digital-paper-background.jpg');
         background-size: 800px;
         background-repeat: repeat;
         background-color: rgba(255, 255, 255, 0.85);
