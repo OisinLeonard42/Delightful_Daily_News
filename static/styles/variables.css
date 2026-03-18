@@ -25,9 +25,9 @@
     --text-contrast: #ffffff;    /* Light text on dark backgrounds */
 
     /* Backgrounds & Surfaces */
-    --color-background: #00ffdd; /* Light parchment background */
+    --color-background: #92c4b5 ; /* Light parchment background */
     --color-surface: #92c4b5;    /* Panels, cards */
-    --color-border: #00ff80;     /* Subtle earthy border */
+    --color-border: #0f0f0f;     /* Subtle earthy border */
     --color-overlay: rgba(0, 0, 0, 0.25);
     --color-code-bg: #dddddd;
 

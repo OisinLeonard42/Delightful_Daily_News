@@ -34,16 +34,14 @@
 
 
 <section class="intro section-hero">
-    <h1>About the Starter Kit</h1>
+    <h1>About the Website</h1>
     <p>
-        This project was designed as a learning platform and design reference for aspiring front-end developers.
-        It introduces foundational concepts in web design, UI/UX principles, accessibility, and mindful development,
-        rooted in philosophies of balance, self-discipline, and continuous growth.
+        This Website was designed to show and display the good news in the world and show people that there is still some goodness in the world.
     </p>
 </section> 
 
 <section class="principles section-shinobi">
-    <h2>11 Principles of the Shinobi</h2>
+    <h2>11 Positives Quotes </h2>
     <div class="principle-grid">
         {#each principles as principle}
             <PhilosophyCard {...principle} theme="shinobi" />
