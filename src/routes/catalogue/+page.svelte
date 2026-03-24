@@ -119,7 +119,7 @@
     }
 
     .catalogue-heading-wrapper {
-        background-image: url('/images/backgrounds/scroll-teaser.png');
+        background-image: url('/images/backgrounds/SunnyAfterNoon.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -129,13 +129,14 @@
         border-radius: var(--radius-md);
         box-shadow: var(--shadow-sm);
         margin-bottom: var(--space-lg);
+
     }
 
     .catalogue-heading {
         font-family: var(--font-heading);
         font-size: var(--font-xxl);
         position: relative;
-        color: var(--text-primary);
+        color: var(--text-contrast);
     }
 
     .catalogue-heading::after {

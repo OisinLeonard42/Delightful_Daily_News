@@ -34,6 +34,7 @@
 
 
 <section class="intro section-hero">
+
     <h1>About the Website</h1>
     <p>
         This Website was designed to show and display the good news in the world and show people that there is still some goodness in the world.
@@ -128,12 +129,12 @@
 
     /* Section: Hero */
     .section-hero {
-        background-image: url("/images/backgrounds/static/news-concept-good-news-on-digital-paper-background.jpg");
+        background-image: url('/images/backgrounds/navid-baraty-mono-lake.jpg');
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; 
         background-blend-mode: overlay;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.75);
     }
 
     /* Section: Shinobi Principles */
@@ -146,7 +147,7 @@
 
     /* Section: Bushidō Virtues */
     .section-bushido {
-        background-image: url("/images/backgrounds/parchment-scroll.png");
+        background-image: url("/images/backgrounds/png-night-sky.png");
         background-size: 650px;
         background-repeat: repeat;
         opacity: 0.95;

@@ -43,7 +43,7 @@
 
     <!-- Featured Catalogue Section -->
     <section class="featured">
-        <h2>Featured Practices</h2>
+        <h2>Featured Articles</h2>
         <div class="card-grid">
             {#each featuredItems as item, index}
                 <button
@@ -70,8 +70,8 @@
     <section class="about-teaser">
         <h2>Why This Matters</h2>
         <p>
-            This project blends timeless wisdom with modern habits — from Stoic journaling to Shinobi adaptability.
-            Whether you seek health, discipline, or mindfulness, our tools are here to guide you.
+            This website matter's because there is nothing but saddness and fear that is reported on the news daily
+             so we decided to make a website that shows the good news that isn't reported.
         </p>
         <a href="{resolve('/about')}" class="learn-more">Learn more →</a>
     </section>
