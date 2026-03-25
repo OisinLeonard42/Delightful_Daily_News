@@ -133,8 +133,8 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; 
-        background-blend-mode: overlay;
-        background-color: rgba(255, 255, 255, 0.75);
+       /* background-blend-mode: overlay;*/
+        /*background-color: rgba(255, 255, 255, 0.75);*/
     }
 
     /* Section: Shinobi Principles */
@@ -155,7 +155,7 @@
 
     /* Section: Gallery */
     .section-gallery {
-        background-image: url("/images/backgrounds/static/news-concept-good-news-on-digital-paper-background.png");
+        background-image: url("/images/backgrounds/static/morning-sunrise.jpg");
         background-size: 800px;
         background-repeat: repeat;
         background-position: bottom center;

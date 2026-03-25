@@ -1,5 +1,5 @@
 <script>
-    import { asset } from '$app/paths';
+   import { asset } from '$app/paths';
 
     export let title = 'Untitled';
     export let description = 'No description provided.';
@@ -14,42 +14,8 @@
 </script>
 
 
-<article class="card" aria-label={`Card: ${title}`} style="animation-delay: {animationDelay}ms;">
-    <div class="image-wrapper">
-        <img src={asset(image)} alt={`Image for ${title}`} />
-    </div>
-
-    <div class="content">
-        <h2>{title}</h2>
-        <p class="category">{category}</p>
-
-        <p class="description">
-            {#if expanded || !isLong}
-                {description}
-            {:else}
-                {description.substring(0, 120)}…
-            {/if}
-        </p>
-
-        {#if isLong}
-            <button class="toggle" on:click={() => expanded = !expanded}>
-                {expanded ? "Read Less" : "Read More"}
-            </button>
-        {/if}
-
-        {#if tags?.length}
-            <div class="tags">
-                {#each tags as tag}
-                    <span class="tag">{tag}</span>
-                {/each}
-            </div>
-        {/if}
-    </div>
-</article>
-
-
 <style>
-    .card {
+  /*  .card {
         display: flex;
         flex-direction: column;
         background: var(--color-surface);
@@ -149,5 +115,5 @@
             opacity: 1;
             transform: translateY(0);
         }
-    }
+    }*/
 </style>

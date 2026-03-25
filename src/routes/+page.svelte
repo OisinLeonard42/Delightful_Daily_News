@@ -98,12 +98,12 @@
         padding: var(--space-xl) var(--space-md);
         border-radius: var(--radius-md);
         box-shadow: var(--shadow-sm);
-        background-image: url('/images/backgrounds/news-concept-good-news-on-digital-paper-background.jpg');
+        background-image: url('/images/backgrounds/morning-sunrise.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; 
         background-blend-mode: overlay;
-        background-color: rgba(255, 255, 255, 0.75);
+        /*background-color: rgba(255, 255, 255, 0.75);*/
     }
 
     .hero h1 {
@@ -139,7 +139,7 @@
     /* Featured Section */
     .featured {
         padding: 0 var(--space-md);
-        background-image: url('/images/backgrounds/static/news-concept-good-news-on-digital-paper-background.jpg');
+        background-image: url('/images/backgrounds/static/morning-sunrise.jpg');
         background-size: 500px;
         background-repeat: repeat;
         background-color: rgb(248, 249, 250);
