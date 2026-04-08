@@ -42,7 +42,7 @@
 </section> 
 
 <section class="principles section-shinobi">
-    <h2>11 Positives Quotes </h2>
+    <h2>Ways to improve yourself </h2>
     <div class="principle-grid">
         {#each principles as principle}
             <PhilosophyCard {...principle} theme="shinobi" />
@@ -108,7 +108,14 @@
         animation: fadeIn 0.6s ease-in;
     }
 
-    section h1,
+    section h1 {
+ font-family: var(--font-heading);
+        font-size: var(--font-xl);
+        color: var(--text-contrast);
+        margin-bottom: var(--space-sm);
+        text-align: center;
+        position: relative;
+    }
     section h2 {
         font-family: var(--font-heading);
         font-size: var(--font-xl);
@@ -139,17 +146,18 @@
 
     /* Section: Shinobi Principles */
     .section-shinobi {
-        background-image: url("/images/backgrounds/kanji-grid.png");
-        background-size: 650px;
-        background-repeat: repeat;
+        background-image: url("/images/backgrounds/neblua-space-planet.jpg");
+        background-size: 2840px;
+        /*background-repeat: repeat;*/
+        /* background-repeat: no-repeat; */
         opacity: 0.95;
     }
 
     /* Section: Bushidō Virtues */
     .section-bushido {
         background-image: url("/images/backgrounds/png-night-sky.png");
-        background-size: 650px;
-        background-repeat: repeat;
+        background-size: 1920px;
+        /*background-repeat: repeat;*/
         opacity: 0.95;
     }
 
@@ -157,7 +165,7 @@
     .section-gallery {
         background-image: url("/images/backgrounds/static/morning-sunrise.jpg");
         background-size: 800px;
-        background-repeat: repeat;
+        /*background-repeat: repeat;*/
         background-position: bottom center;
         opacity: 0.95;
     }
@@ -178,7 +186,7 @@
 		max-width: 800px;
 		margin: 0 auto;
 		padding: var(--space-lg);
-		background: rgba(255, 255, 255, 0.75);
+		background: rgba(243, 236, 236, 0.75);
 		border-radius: var(--radius-md);
 		box-shadow: var(--shadow-md);
 		backdrop-filter: blur(3px);
@@ -207,7 +215,7 @@
 
     p {
         font-size: var(--font-base);
-        color: var(--text-secondary);
+        color: var(--text-contrast);
         max-width: 700px;
         margin: 0 auto var(--space-md);
         text-align: center;

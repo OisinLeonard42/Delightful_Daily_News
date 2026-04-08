@@ -93,9 +93,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		background-image: url('/images/backgrounds/kanji-grid.png');
-        background-size: 200px;
-        background-repeat: repeat;
+		background-image: url('/images/backgrounds/neblua-space-planet.jpg');
+        background-size: 2160px;
+       /* background-repeat: repeat;*//*This will stop the image from repeating*/
+	    background-repeat: no-repeat; 
         background-color: rgba(255, 255, 255, 0.85);
 	}
 	
