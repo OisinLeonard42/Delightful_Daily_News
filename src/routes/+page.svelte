@@ -5,7 +5,15 @@
     import { CatalogueCard, Modal } from '$lib/components';
     import { catalogue } from '$lib/stores/catalogueStore.js';
     import { currentQuote, setRandomQuote } from '$lib/stores/quoteStore.js';
-    
+        import { asset } from '$app/paths';
+    import { FlipCard } from '$lib/components';
+
+    const principles = [
+        { title: 'Nature', description: 'Understand your mind, body, and purpose.' },
+        { title: 'Space', description: 'Embrace constant change. Flow like water.' },
+        { title: ' Animals', description: 'Resist impulsive action and fear.' },
+       
+    ];
     let showQuoteModal = false;
 
     /**
@@ -22,7 +30,6 @@
     }
 </script>
 
-
 <!--<svelte:head>
     <title>Starter Kit</title>
 </svelte:head>-->
@@ -32,13 +39,8 @@
 <div class="home-container">
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Live Mindfully. Learn Purposefully.</h1>
-        <p class="subheading">
-            Inspired by the 7 Virtues of Bushidō and the 11 Principles of the Shinobi.
-        </p>
-        <button class="inspire-button" on:click={openQuoteModal}>
-            Find Inspiration
-        </button>
+        <h1>Welcome to Delightful Daily News.</h1>
+     
     </section>
 
     <!-- Featured Catalogue Section -->
@@ -46,21 +48,7 @@
         <h2>Featured Articles</h2>
         <div class="card-grid">
             {#each featuredItems as item, index}
-                <button
-					type="button"
-					class="card-button"
-					on:click={() => goto(resolve('/catalogue/[title]', { title: item.title }))}
-					aria-label={`View details for ${item.title}`}
-				>
-                    <CatalogueCard
-                        title={item.title}
-                        description={item.description}
-                        image={item.image}
-                        category={item.category}
-                        tags={item.tags}
-                        animationDelay={index * 80}
-                    />
-                </button>
+               <FlipCard {...item} theme="shinobi" />
             {/each}
         </div>
         <a class="browse-link" href="{resolve('/catalogue')}">Browse Full Catalogue →</a>
@@ -70,7 +58,7 @@
     <section class="about-teaser">
         <h2>Why This Matters</h2>
         <p>
-            This website matter's because there is nothing but saddness and fear that is reported on the news daily
+            This website matter's because there is nothing but saddness and fear on the news daily
              so we decided to make a website that shows the good news that isn't reported.
         </p>
         <a href="{resolve('/about')}" class="learn-more">Learn more →</a>
@@ -139,9 +127,9 @@
     /* Featured Section */
     .featured {
         padding: 0 var(--space-md);
-        background-image: url('/images/backgrounds/static/morning-sunrise.jpg');
-        background-size: 500px;
-        background-repeat: repeat;
+        background-image: url('/images/backgrounds/morning-sunrise.jpg');
+        background-size: cover;
+        
         background-color: rgb(248, 249, 250);
     }
 

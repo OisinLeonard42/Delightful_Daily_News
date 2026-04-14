@@ -90,9 +90,7 @@
     }
 
     /* Optional Theming */
-    .philosophy-card.shinobi {
-        border: 2px solid var(--color-secondary);
-    }
+   
 
     .philosophy-card.bushido {
         border: 2px solid var(--color-accent);

@@ -48,7 +48,6 @@
         bottom: 0;
         min-height: 100%;
         width: 100%;
-        background-image: url("/images/backgrounds/static/morning-sunrise.jpg");
         background-repeat: repeat-y; /* or 'no-repeat' for full image */
         background-size: cover;      /* or 'contain' if you want it less aggressive */
         background-position: center top;

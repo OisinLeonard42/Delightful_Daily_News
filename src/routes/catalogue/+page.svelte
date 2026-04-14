@@ -119,7 +119,7 @@
     }
 
     .catalogue-heading-wrapper {
-        background-image: url('/images/backgrounds/SunnyAfterNoon.jpg');
+        background-image: url('/images/backgrounds/beach_background.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

@@ -1,19 +1,14 @@
 <script>
     import { asset } from '$app/paths';
-    import { PhilosophyCard } from '$lib/components';
+    import { FlipCard } from '$lib/components';
 
     const principles = [
-        { title: 'Know the Self', description: 'Understand your mind, body, and purpose.' },
-        { title: 'Adaptability', description: 'Embrace constant change. Flow like water.' },
-        { title: 'Emotional Control', description: 'Resist impulsive action and fear.' },
-        { title: 'Presence of Mind', description: 'Stay calm. Focus on now.' },
-        { title: 'Observation', description: 'Sharpen your senses to see what others miss.' },
-        { title: 'Invisibility', description: 'Let go of ego. Blend with your surroundings.' },
-        { title: 'Preparation', description: 'Always be ready. Anticipate challenges.' },
-        { title: 'Decisiveness', description: 'Act swiftly. Trust your training.' },
-        { title: 'Continuous Training', description: 'Refine your skills daily.' },
-        { title: 'Respect Nature', description: 'Live in tune with the world around you.' },
-        { title: 'Purposeful Living', description: 'Let values guide your path.' }
+        { title: 'Nature', description: 'Understand your mind, body, and purpose.' },
+        { title: 'Space', description: 'Embrace constant change. Flow like water.' },
+        { title: ' Animals', description: 'Resist impulsive action and fear.' },
+        { title: 'World', description: 'Stay calm. Focus on now.' },
+        { title: 'Sports', description: 'Sharpen your senses to see what others miss.' },
+        { title: 'Gaming', description: 'Let go of ego. Blend with your surroundings.' },
     ];
 
     const virtues = [
@@ -23,7 +18,6 @@
         { title: 'Rei – Respect', description: 'Demonstrate courtesy and politeness.' },
         { title: 'Makoto – Honesty', description: 'Speak truth and act with integrity.' },
         { title: 'Meiyo – Honour', description: 'Uphold your reputation and values.' },
-        { title: 'Chūgi – Loyalty', description: 'Be faithful to your word and duties.' }
     ];
 </script>
 
@@ -45,7 +39,7 @@
     <h2>Ways to improve yourself </h2>
     <div class="principle-grid">
         {#each principles as principle}
-            <PhilosophyCard {...principle} theme="shinobi" />
+            <FlipCard {...principle} theme="shinobi" />
         {/each}
     </div>
 </section>
@@ -54,7 +48,7 @@
     <h2>The 7 Virtues of Bushidō</h2>
     <div class="virtue-grid">
         {#each virtues as virtue}
-            <PhilosophyCard {...virtue} theme="bushido" />
+            <FlipCard {...virtue} theme="bushido" />
         {/each}
     </div>
 </section>
@@ -136,7 +130,7 @@
 
     /* Section: Hero */
     .section-hero {
-        background-image: url('/images/backgrounds/navid-baraty-mono-lake.jpg');
+        background-image: url('/images/backgrounds/NightSky.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; 
@@ -146,7 +140,7 @@
 
     /* Section: Shinobi Principles */
     .section-shinobi {
-        background-image: url("/images/backgrounds/neblua-space-planet.jpg");
+        background-image: url("/images/backgrounds/StarSky.jpg");
         background-size: 2840px;
         /*background-repeat: repeat;*/
         /* background-repeat: no-repeat; */
@@ -163,7 +157,7 @@
 
     /* Section: Gallery */
     .section-gallery {
-        background-image: url("/images/backgrounds/static/morning-sunrise.jpg");
+      
         background-size: 800px;
         /*background-repeat: repeat;*/
         background-position: bottom center;

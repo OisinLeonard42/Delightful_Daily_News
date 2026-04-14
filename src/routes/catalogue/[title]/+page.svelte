@@ -93,8 +93,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		background-image: url('/images/backgrounds/neblua-space-planet.jpg');
-        background-size: 2160px;
+		background-image: url('/images/backgrounds/StarSky.jpg.jpg');
+        background-size: 2560px;
        /* background-repeat: repeat;*//*This will stop the image from repeating*/
 	    background-repeat: no-repeat; 
         background-color: rgba(255, 255, 255, 0.85);
@@ -160,7 +160,6 @@
 	.related {
 		margin-top: var(--space-xl);
 		padding: var(--space-lg) var(--space-md);
-		background-image: url('/images/backgrounds/morning-sunrise.jpg');
         background-size: 800px;
         background-repeat: repeat;
         background-color: rgba(255, 255, 255, 0.85);
