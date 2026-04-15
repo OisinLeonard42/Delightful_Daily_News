@@ -51,7 +51,7 @@
 
 	<div class="controls">
 		<label class="search-input">
-			<span role="img" aria-label="Search">🔍</span>
+			<span role="img" aria-label="Search"></span>
 			<input
 				type="text"
 				bind:value={search}
