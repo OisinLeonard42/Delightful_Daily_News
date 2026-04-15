@@ -3,21 +3,21 @@
     import { FlipCard } from '$lib/components';
 
     const principles = [
-        { title: 'Nature', description: 'Understand your mind, body, and purpose.' },
-        { title: 'Space', description: 'Embrace constant change. Flow like water.' },
-        { title: ' Animals', description: 'Resist impulsive action and fear.' },
-        { title: 'World', description: 'Stay calm. Focus on now.' },
-        { title: 'Sports', description: 'Sharpen your senses to see what others miss.' },
-        { title: 'Gaming', description: 'Let go of ego. Blend with your surroundings.' },
-    ];
-
-    const virtues = [
-        { title: 'William W. Purkey', description: 'You gotta dance like there nobodys watching love like you will never be hurt sing like there is nobody watching and live like it is heaven on earth.' },
+       { title: 'William W. Purkey', description: 'You gotta dance like there nobodys watching love like you will never be hurt sing like there is nobody watching and live like it is heaven on earth.' },
         { title: 'Mahatma Gandhi', description: 'Be the change that you wish to see in the world..' },
         { title: 'Stephen Chbosky', description: 'We accept the love we think we deserve.' },
         { title: 'George Eliot', description: 'It is never too late to be what you might have been.' },
         { title: 'Friedrich Nietzsche', description: 'Without music, life would be a mistake.' },
         { title: 'Pablo Picasso', description: 'Everything you can imagine is real..' },
+    ];
+
+    const virtues = [
+        { title: 'Nature', description: 'Do what is right by principle and justice.' },
+        { title: 'World', description: 'Face danger with bravery and honour.' },
+        { title: 'Sports', description: 'Show compassion and act for others.' },
+        { title: 'Space', description: 'Demonstrate courtesy and politeness.' },
+        { title: 'Animals', description: 'Speak truth and act with integrity.' },
+        { title: 'Gaming', description: 'Uphold your reputation and values.' },
     ];
 </script>
 
@@ -36,7 +36,7 @@
 </section> 
 
 <section class="principles section-shinobi">
-    <h2>Here are some examples of our news articles</h2>
+    <h2>7 inspritation quotes</h2>
     <div class="principle-grid">
         {#each principles as principle}
             <FlipCard {...principle} theme="shinobi" />
@@ -45,7 +45,7 @@
 </section>
 
 <section class="virtues section-bushido">
-    <h2>7 inspration quotes</h2>
+    <h2>Example of News Articles</h2>
     <div class="virtue-grid">
         {#each virtues as virtue}
             <FlipCard {...virtue} theme="bushido" />
@@ -65,14 +65,14 @@
         <figure>
             <img src={asset("/images/about/samurai.png")} alt="Samurai in Silhouette against Setting Sun" />
             <figcaption>
-                Researchers Turn Car Battery Acid and Plastic Waste into Clean Hydrogen and New Plastic.
+                A lone samurai silhouetted at sunset — reflecting discipline, solitude, and the inner path of virtue.
             </figcaption>
         </figure>
 
         <figure>
-           <img src={asset("/images/about/Bees.jpeg")} alt="Bees in Southern California" />
+           <img src={asset("/images/about/bamboo.png")} alt="Tranquil Path through Bamboo Forest" />
             <figcaption>
-            Unique Honeybees Found Only in Southern California Can Fend Off Deadly Varroa Mites.
+            
             </figcaption>
         </figure>
     </div>
@@ -157,7 +157,7 @@
     /* Section: Gallery */
     .section-gallery {
       
-        background-size: 1400px;
+        background-size: 800px;
         /*background-repeat: repeat;*/
         background-position: bottom center;
         opacity: 0.95;
