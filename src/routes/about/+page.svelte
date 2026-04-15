@@ -12,12 +12,12 @@
     ];
 
     const virtues = [
-        { title: 'Gi – Rectitude', description: 'Do what is right by principle and justice.' },
-        { title: 'Yū – Courage', description: 'Face danger with bravery and honour.' },
-        { title: 'Jin – Benevolence', description: 'Show compassion and act for others.' },
-        { title: 'Rei – Respect', description: 'Demonstrate courtesy and politeness.' },
-        { title: 'Makoto – Honesty', description: 'Speak truth and act with integrity.' },
-        { title: 'Meiyo – Honour', description: 'Uphold your reputation and values.' },
+        { title: 'William W. Purkey', description: 'You gotta dance like there nobodys watching love like you will never be hurt sing like there is nobody watching and live like it is heaven on earth.' },
+        { title: 'Mahatma Gandhi', description: 'Be the change that you wish to see in the world..' },
+        { title: 'Stephen Chbosky', description: 'We accept the love we think we deserve.' },
+        { title: 'George Eliot', description: 'It is never too late to be what you might have been.' },
+        { title: 'Friedrich Nietzsche', description: 'Without music, life would be a mistake.' },
+        { title: 'Pablo Picasso', description: 'Everything you can imagine is real..' },
     ];
 </script>
 
@@ -36,7 +36,7 @@
 </section> 
 
 <section class="principles section-shinobi">
-    <h2>Ways to improve yourself </h2>
+    <h2>Here are some examples of our news articles</h2>
     <div class="principle-grid">
         {#each principles as principle}
             <FlipCard {...principle} theme="shinobi" />
@@ -45,7 +45,7 @@
 </section>
 
 <section class="virtues section-bushido">
-    <h2>The 7 Virtues of Bushidō</h2>
+    <h2>7 inspration quotes</h2>
     <div class="virtue-grid">
         {#each virtues as virtue}
             <FlipCard {...virtue} theme="bushido" />
@@ -54,7 +54,6 @@
 </section>
 
 <section class="gallery section-gallery">
-    <h2>Philosophical Inspirations</h2>
     <div class="grid">
         <figure>
             <img src={asset("/images/about/shrine.png")} alt="Mountain Shrine at Dawn" />
@@ -66,14 +65,14 @@
         <figure>
             <img src={asset("/images/about/samurai.png")} alt="Samurai in Silhouette against Setting Sun" />
             <figcaption>
-                A lone samurai silhouetted at sunset — reflecting discipline, solitude, and the inner path of virtue.
+                Researchers Turn Car Battery Acid and Plastic Waste into Clean Hydrogen and New Plastic.
             </figcaption>
         </figure>
 
         <figure>
-           <img src={asset("/images/about/bamboo.png")} alt="Tranquil Path through Bamboo Forest" />
+           <img src={asset("/images/about/Bees.jpeg")} alt="Bees in Southern California" />
             <figcaption>
-                A winding path through bamboo — evoking balance, flexibility, and quiet persistence.
+            Unique Honeybees Found Only in Southern California Can Fend Off Deadly Varroa Mites.
             </figcaption>
         </figure>
     </div>
@@ -158,7 +157,7 @@
     /* Section: Gallery */
     .section-gallery {
       
-        background-size: 800px;
+        background-size: 1400px;
         /*background-repeat: repeat;*/
         background-position: bottom center;
         opacity: 0.95;
