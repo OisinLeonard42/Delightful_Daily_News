@@ -70,7 +70,7 @@
         </figure>
 
         <figure>
-           <img src={asset("/images/about/bamboo.png")} alt="Tranquil Path through Bamboo Forest" />
+           <img src={asset("/images/about/Bees.jpg")} alt="Tranquil Path through Bamboo Forest" />
             <figcaption>
             
             </figcaption>
@@ -101,7 +101,7 @@
         animation: fadeIn 0.6s ease-in;
     }
 
-    section h1 {
+    section h1, h2 {
  font-family: var(--font-heading);
         font-size: var(--font-xl);
         color: var(--text-contrast);
@@ -109,14 +109,7 @@
         text-align: center;
         position: relative;
     }
-    section h2 {
-        font-family: var(--font-heading);
-        font-size: var(--font-xl);
-        margin-bottom: var(--space-sm);
-        text-align: center;
-        position: relative;
-    }
-
+   
     section h2::after {
         content: "";
         display: block;
