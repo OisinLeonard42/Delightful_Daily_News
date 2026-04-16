@@ -27,71 +27,79 @@
 </svelte:head>
 
 
-<section class="intro section-hero">
+<div class="about-container">
+    <section class="intro section-hero">
 
-    <h1>About the Website</h1>
-    <p>
-        This Website was designed to show and display the good news in the world and show people that there is still some goodness in the world.
-    </p>
-</section> 
+        <h1>About the Website</h1>
+        <p>
+            This Website was designed to show and display the good news in the world and show people that there is still some goodness in the world.
+        </p>
+    </section> 
 
-<section class="principles section-shinobi">
-    <h2>7 inspritation quotes</h2>
-    <div class="principle-grid">
-        {#each principles as principle}
-            <FlipCard {...principle} theme="shinobi" />
-        {/each}
-    </div>
-</section>
+    <section class="principles section-shinobi">
+        <h2>7 inspritation quotes</h2>
+        <div class="principle-grid">
+            {#each principles as principle}
+                <FlipCard {...principle} theme="shinobi" />
+            {/each}
+        </div>
+    </section>
 
-<section class="virtues section-bushido">
-    <h2>Example of News Articles</h2>
-    <div class="virtue-grid">
-        {#each virtues as virtue}
-            <FlipCard {...virtue} theme="bushido" />
-        {/each}
-    </div>
-</section>
+    <section class="virtues section-bushido">
+        <h2>Example of News Articles</h2>
+        <div class="virtue-grid">
+            {#each virtues as virtue}
+                <FlipCard {...virtue} theme="bushido" />
+            {/each}
+        </div>
+    </section>
 
-<section class="gallery section-gallery">
-    <div class="grid">
-        <figure>
-            <img src={asset("/images/about/shrine.png")} alt="Mountain Shrine at Dawn" />
-            <figcaption>
-                A mountain shrine illuminated by dawn — symbolising spiritual focus and clarity of purpose.
-            </figcaption>
-        </figure>
+    <section class="gallery section-gallery">
+        <div class="grid">
+            <figure>
+                <img src={asset("/images/about/shrine.png")} alt="Mountain Shrine at Dawn" />
+                <figcaption>
+                    A mountain shrine illuminated by dawn — symbolising spiritual focus and clarity of purpose.
+                </figcaption>
+            </figure>
 
-        <figure>
-            <img src={asset("/images/about/samurai.png")} alt="Samurai in Silhouette against Setting Sun" />
-            <figcaption>
-                A lone samurai silhouetted at sunset — reflecting discipline, solitude, and the inner path of virtue.
-            </figcaption>
-        </figure>
+            <figure>
+                <img src={asset("/images/about/samurai.png")} alt="Samurai in Silhouette against Setting Sun" />
+                <figcaption>
+                    A lone samurai silhouetted at sunset — reflecting discipline, solitude, and the inner path of virtue.
+                </figcaption>
+            </figure>
 
-        <figure>
-           <img src={asset("/images/about/Bees.jpg")} alt="Tranquil Path through Bamboo Forest" />
-            <figcaption>
-            
-            </figcaption>
-        </figure>
-    </div>
-</section>
+            <figure>
+            <img src={asset("/images/about/Bees.jpg")} alt="Tranquil Path through Bamboo Forest" />
+                <figcaption>
+                
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-<section class="reflection section-quote" aria-labelledby="reflection-title">
-	<div class="container">
-		<h2 id="reflection-title">Reflections</h2>
-		<blockquote>
-			<p>
-				“He who conquers himself is the mightiest warrior.”
-			</p>
-			<footer>— Confucius</footer>
-		</blockquote>
-	</div>
-</section>
+    <section class="reflection section-quote" aria-labelledby="reflection-title">
+        <div class="container">
+            <h2 id="reflection-title">Reflections</h2>
+            <blockquote>
+                <p>
+                    “He who conquers himself is the mightiest warrior.”
+                </p>
+                <footer>— Confucius</footer>
+            </blockquote>
+        </div>
+    </section>
+</div>
 
 
 <style>
+ .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xl);
+        background-image: url('/images/Artwork_backgrounds/Hexa.jpg');
+    }
     section {
         margin-bottom: var(--space-xl);
         padding: var(--space-lg) var(--space-md);
@@ -133,23 +141,22 @@
     /* Section: Shinobi Principles */
     .section-shinobi {
         background-image: url("/images/backgrounds/StarSky.jpg");
-        background-size: 2840px;
-        /*background-repeat: repeat;*/
-        /* background-repeat: no-repeat; */
+        background-size: 1000px;
+        background-repeat: repeat;
         opacity: 0.95;
     }
 
     /* Section: Bushidō Virtues */
     .section-bushido {
         background-image: url("/images/backgrounds/png-night-sky.png");
-        background-size: 1920px;
+        background-size: 1000px;
         /*background-repeat: repeat;*/
         opacity: 0.95;
     }
 
     /* Section: Gallery */
     .section-gallery {
-      
+       background-image: url('/images/Artwork_backgrounds/Hexa.jpg');
         background-size: 800px;
         /*background-repeat: repeat;*/
         background-position: bottom center;

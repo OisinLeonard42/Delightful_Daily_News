@@ -44,78 +44,88 @@
 </svelte:head>-->
 
 
-<section class="catalogue-wrapper">
-	<div class="catalogue-heading-wrapper">
-		<h1 class="catalogue-heading">Catalogue</h1>
-	</div>
+<div class="catalogue-container">
+    <section class="catalogue-wrapper">
+        <div class="catalogue-heading-wrapper">
+            <h1 class="catalogue-heading">Catalogue</h1>
+        </div>
 
-	<div class="controls">
-		<label class="search-input">
-			<span role="img" aria-label="Search"></span>
-			<input
-				type="text"
-				bind:value={search}
-				placeholder="Search catalogue..."
-				aria-label="Search catalogue"
-			/>
-		</label>
+        <div class="controls">
+            <label class="search-input">
+                <span role="img" aria-label="Search"></span>
+                <input
+                    type="text"
+                    bind:value={search}
+                    placeholder="Search catalogue..."
+                    aria-label="Search catalogue"
+                />
+            </label>
 
-		<label class="tag-select">
-			<span role="img" aria-label="Filter">🏷️</span>
-			<select bind:value={selectedTag} aria-label="Filter by tag">
-				<option value="all">All Tags</option>
-				{#each $tags as tag}
-					<option value={tag}>{tag}</option>
-				{/each}
-			</select>
-		</label>
+            <label class="tag-select">
+                <span role="img" aria-label="Filter">🏷️</span>
+                <select bind:value={selectedTag} aria-label="Filter by tag">
+                    <option value="all">All Tags</option>
+                    {#each $tags as tag}
+                        <option value={tag}>{tag}</option>
+                    {/each}
+                </select>
+            </label>
 
-		<label class="sort-select">
-			<span role="img" aria-label="Sort">⇅</span>
-			<select bind:value={sortBy} aria-label="Sort by">
-				<option value="title">Sort by Title</option>
-				<option value="category">Sort by Category</option>
-			</select>
-		</label>
+            <label class="sort-select">
+                <span role="img" aria-label="Sort">⇅</span>
+                <select bind:value={sortBy} aria-label="Sort by">
+                    <option value="title">Sort by Title</option>
+                    <option value="category">Sort by Category</option>
+                </select>
+            </label>
 
-		{#if isFiltered}
-			<button class="reset-button" on:click={resetFilters}>
-				✖ Reset
-			</button>
-		{/if}
-	</div>
-
-    <div class="grid" class:narrow={filteredCatalogue.length <= 2}>
-		{#if filteredCatalogue.length > 0}
-            {#each filteredCatalogue as item, index (animationKey + '-' + item.id)}
-                <button
-					type="button"
-					class="card-button"
-					on:click={() => goto(resolve('/catalogue/[title]', { title: item.title }))}
-					aria-label={`View details for ${item.title}`}
-				>
-                    <CatalogueCard
-                        title={item.title}
-                        description={item.description}
-                        image={item.image}
-                        category={item.category}
-                        tags={item.tags}
-                        animationDelay={index * 80}
-                    />
+            {#if isFiltered}
+                <button class="reset-button" on:click={resetFilters}>
+                    ✖ Reset
                 </button>
-            {/each}
-        {:else}
-            <p class="empty">No items match your search or filter.</p>
-        {/if}
-	</div>
-</section>
+            {/if}
+        </div>
 
+        <div class="grid" class:narrow={filteredCatalogue.length <= 2}>
+            {#if filteredCatalogue.length > 0}
+                {#each filteredCatalogue as item, index (animationKey + '-' + item.id)}
+                    <button
+                        type="button"
+                        class="card-button"
+                        on:click={() => goto(resolve('/catalogue/[title]', { title: item.title }))}
+                        aria-label={`View details for ${item.title}`}
+                    >
+                        <CatalogueCard
+                            title={item.title}
+                            description={item.description}
+                            image={item.image}
+                            category={item.category}
+                            tags={item.tags}
+                            animationDelay={index * 80}
+                        />
+                    </button>
+                {/each}
+            {:else}
+                <p class="empty">No items match your search or filter.</p>
+            {/if}
+        </div>
+    </section>
+
+</div>
 
 <style>
+ .catalogue-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xl);
+        background-image: url('/images/Artwork_backgrounds/Waves.jpg');
+    }
+
 	.catalogue-wrapper {
         width: 100%;
         margin: 0 auto;
         padding: 0;
+        background-color: transparent;
     }
 
     .catalogue-heading-wrapper {
@@ -132,21 +142,12 @@
 
     }
 
-    .catalogue-heading {
+    .catalogue-heading {    
         font-family: var(--font-heading);
         font-size: var(--font-xxl);
         position: relative;
         color: var(--text-contrast);
-    }
-
-    .catalogue-heading::after {
-        content: "";
-        display: block;
-        width: 80px;
-        height: 4px;
-        margin: var(--space-sm) auto 0;
-        background: var(--color-accent);
-        border-radius: var(--radius-sm);
+       
     }
 
     .controls {

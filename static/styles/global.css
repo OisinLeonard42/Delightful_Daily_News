@@ -24,7 +24,6 @@ html, body {
 section {
     padding: var(--space-md) 0 var(--space-xl);
     margin-bottom: var(--space-lg);
-    animation: fadeIn 0.4s ease-in;
     background-color: var(--color-surface);
 }
 
