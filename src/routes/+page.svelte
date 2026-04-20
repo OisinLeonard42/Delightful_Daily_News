@@ -78,7 +78,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--space-xl);
-        background-image: url('/images/Artwork_backgrounds/Bubbles.jpg');
+        
     }
 
     /* Hero Section */

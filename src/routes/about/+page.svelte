@@ -55,25 +55,27 @@
     </section>
 
     <section class="gallery section-gallery">
+     <h2>Showcase of Our Newsest Articles</h2>
         <div class="grid">
             <figure>
-                <img src={asset("/images/about/shrine.png")} alt="Mountain Shrine at Dawn" />
+                <img class="gaming" src={asset("/images/about/Lyndon-starlight-gaming-station.jpg")} alt="Mountain Shrine at Dawn" />
                 <figcaption>
-                    A mountain shrine illuminated by dawn — symbolising spiritual focus and clarity of purpose.
+                    Nintendo is Partnering With a Nonprofit to Bring Gaming Consoles to Hospitalized Kids.
+                </figcaption>
+          
+            </figure>
+
+            <figure>
+                <img class="volunteers" src={asset("/images/about/volunteers.jpg")} alt="Samurai in Silhouette against Setting Sun" />
+                <figcaption>
+                   6,500 Volunteers Build 10,000 Beds in 24 Hours for Kids Who Do not Have One of Their Own.
                 </figcaption>
             </figure>
 
             <figure>
-                <img src={asset("/images/about/samurai.png")} alt="Samurai in Silhouette against Setting Sun" />
+            <img class="bees" src={asset("/images/about/Bees.jpg")} alt="Tranquil Path through Bamboo Forest" />
                 <figcaption>
-                    A lone samurai silhouetted at sunset — reflecting discipline, solitude, and the inner path of virtue.
-                </figcaption>
-            </figure>
-
-            <figure>
-            <img src={asset("/images/about/Bees.jpg")} alt="Tranquil Path through Bamboo Forest" />
-                <figcaption>
-                
+                Unique Honeybees Found Only in Southern California Can Fend Off Deadly Varroa Mites
                 </figcaption>
             </figure>
         </div>
@@ -81,12 +83,12 @@
 
     <section class="reflection section-quote" aria-labelledby="reflection-title">
         <div class="container">
-            <h2 id="reflection-title">Reflections</h2>
+            <h2 id="reflection-title">Contacts</h2>
             <blockquote>
                 <p>
-                    “He who conquers himself is the mightiest warrior.”
+                    “Emails:C00309964@setu.ie and C00306907@setu.ie”
                 </p>
-                <footer>— Confucius</footer>
+                <footer>— If you ever want to content us for any good news articles that you want to upload please email us and we will look over your article and we will upload it to the website.</footer>
             </blockquote>
         </div>
     </section>
@@ -98,7 +100,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--space-xl);
-        background-image: url('/images/Artwork_backgrounds/Hexa.jpg');
+       
     }
     section {
         margin-bottom: var(--space-xl);
@@ -156,24 +158,27 @@
 
     /* Section: Gallery */
     .section-gallery {
-       background-image: url('/images/Artwork_backgrounds/Hexa.jpg');
+     
         background-size: 800px;
         /*background-repeat: repeat;*/
         background-position: bottom center;
         opacity: 0.95;
     }
+    .gaming{
+    width: 400px;
+    height: 630px;
+    }
+     .volunteers{
+    width: 400px;
+    height: 630px;
+    }
+      .bees{
+    width: 400px;
+    height: 630px;
+    }
 
     /* Section: Quote or Reflection */
-    .section-quote {
-		background-image: url("/images/backgrounds/zen-garden-ripples.png");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-blend-mode: overlay;
-		background-color: rgba(255, 255, 255, 0.85);
-		padding: var(--space-xl) var(--space-md);
-		text-align: center;
-	}
+   
 
 	.section-quote .container {
 		max-width: 800px;

@@ -12,6 +12,9 @@
     <Navigation />
 </header>
 
+<header2 class="cataloge-container">
+  
+</header2>
 
 <style>
     .header {
@@ -20,6 +23,7 @@
         align-items: center;
         padding: 0 var(--space-lg);
         background-color: var(--color-surface);
+       
         box-shadow: var(--shadow-md);
         border-bottom: var(--border-default);
         position: relative;
@@ -38,6 +42,18 @@
         height: auto;
         border-radius: var(--radius-sm);
         box-shadow: var(--shadow-sm);
+    }
+
+.logo-area h1 {
+        margin: 0;
+        font-size: var(--font-xxl);
+        font-weight: 700;
+        background: var(--gradient-brand);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1;
+        animation: fadeInTitle 0.6s ease forwards;
     }
 
     @keyframes fadeInTitle {
@@ -62,5 +78,9 @@
             justify-content: center;
             width: 100%;
         }
+          .logo-area h1 {
+            font-size: var(--font-lg);
+        }
     }
 </style>
+

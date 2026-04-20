@@ -11,7 +11,6 @@
         font-family: var(--font-body);
         font-size: var(--font-sm);
         color: var(--text-tertiary);
-        background-image: url('/images/Artwork_backgrounds/Bubbles.jpg');
         background-color: var(--color-surface);
         border-top: var(--border-default);
         box-shadow: var(--shadow-sm);
