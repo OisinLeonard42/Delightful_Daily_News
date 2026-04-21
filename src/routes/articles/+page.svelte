@@ -2,8 +2,8 @@
     import { fade } from 'svelte/transition';
     import { resolve } from '$app/paths';
 	import { goto } from '$app/navigation';
-	import { catalogue, categories, tags } from '$lib/stores';
-	import { CatalogueCard } from '$lib/components';
+	import { articles, categories, tags } from '$lib/stores';
+	import { ArticleCard } from '$lib/components';
 
 	let search = '';
 	let selectedTag = 'all';
@@ -19,8 +19,8 @@
 
 	$: isFiltered = search || selectedTag !== 'all' || sortBy !== 'title';
 
-	// Reactive filtered + sorted catalogue
-	$: filteredCatalogue = $catalogue
+	// Reactive filtered + sorted articles
+	$: filteredArticles = $articles
 		.filter(item => {
 			const matchesTag = selectedTag === 'all' || item.tags?.includes(selectedTag);
 			const matchesSearch = item.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -34,20 +34,20 @@
 		});
 
     // Reactive hash to force re-animation
-	$: animationKey = `${search}-${selectedTag}-${sortBy}-${filteredCatalogue.map(i => i.id).join(',')}`;
+	$: animationKey = `${search}-${selectedTag}-${sortBy}-${filteredArticles.map(i => i.id).join(',')}`;
 </script>
 
 
 <!--
 <svelte:head> 
-<title>Catalogue | Starter Kit</title>
+<title>Articles | Starter Kit</title>
 </svelte:head>-->
 
 
-<div class="catalogue-container">
-    <section class="catalogue-wrapper">
-        <div class="catalogue-heading-wrapper">
-            <h1 class="catalogue-heading">Catalogue</h1>
+<div class="articles-container">
+    <section class="articles-wrapper">
+        <div class="articles-heading-wrapper">
+            <h1 class="articles-heading">Articles</h1>
         </div>
 
         <div class="controls">
@@ -56,8 +56,8 @@
                 <input
                     type="text"
                     bind:value={search}
-                    placeholder="Search catalogue..."
-                    aria-label="Search catalogue"
+                    placeholder="Search articles..."
+                    aria-label="Search articles"
                 />
             </label>
 
@@ -86,16 +86,16 @@
             {/if}
         </div>
 
-        <div class="grid" class:narrow={filteredCatalogue.length <= 2}>
-            {#if filteredCatalogue.length > 0}
-                {#each filteredCatalogue as item, index (animationKey + '-' + item.id)}
+        <div class="grid" class:narrow={filteredArticles.length <= 2}>
+            {#if filteredArticles.length > 0}
+                {#each filteredArticles as item, index (animationKey + '-' + item.id)}
                     <button
                         type="button"
                         class="card-button"
-                        on:click={() => goto(resolve('/catalogue/[title]', { title: item.title }))}
+                        on:click={() => goto(resolve('/articles/[id]', { id: item.id }))}
                         aria-label={`View details for ${item.title}`}
                     >
-                        <CatalogueCard
+                        <ArticleCard
                             title={item.title}
                             description={item.description}
                             image={item.image}
@@ -114,20 +114,20 @@
 </div>
 
 <style>
- .catalogue-container {
+ .articles-container {
         display: flex;
         flex-direction: column;
         gap: var(--space-xl);
     }
 
-	.catalogue-wrapper {
+	.articles-wrapper {
         width: 100%;
         margin: 0 auto;
         padding: 0;
         background-color: transparent;
     }
 
-    .catalogue-heading-wrapper {
+    .articles-heading-wrapper {
         background-image: url('/images/backgrounds/beach_background.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -141,7 +141,7 @@
 
     }
 
-    .catalogue-heading {    
+    .articles-heading {    
         font-family: var(--font-heading);
         font-size: var(--font-xxl);
         position: relative;

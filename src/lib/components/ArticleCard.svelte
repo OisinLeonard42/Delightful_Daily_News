@@ -3,7 +3,7 @@
 
     export let title = 'Untitled';
     export let description = 'No description provided.';
-    export let image = '/images/catalogue/placeholder.jpg';
+    export let image = '/images/articles/placeholder.jpg';
     export let category = 'Uncategorised';
     /** @type {string | any[]} */
     export let tags = [];

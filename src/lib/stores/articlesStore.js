@@ -1,10 +1,10 @@
 import { writable, derived } from 'svelte/store';
 
 /**
- * Catalogue of resources promoting healthy, mindful, and disciplined living.
+ * Articles of resources promoting healthy, mindful, and disciplined living.
  * Each item is structured for use with Card and Modal components.
  */
-const initialCatalogue = [
+const initialArticles = [
     {
         id: "1",
         title: "Aquarium Seal Loves His Rubber Duckie And Now Adorable Video Goes Viral.",
@@ -12,7 +12,7 @@ const initialCatalogue = [
         category: "movement",
         tags: ["mindfulness", "morning", "mobility"],
         featured: false,
-        image: "/images/catalogue/item-1.jpg"
+        image: "/images/articles/item-1.jpg"
     },
     {
         id: "2",
@@ -21,7 +21,7 @@ const initialCatalogue = [
         category: "focus",
         tags: ["focus", "discipline", "organisation"],
         featured: false,
-        image: "/images/catalogue/item-5.jpg"
+        image: "/images/articles/item-5.jpg"
     },
     {
         id: "3",
@@ -30,7 +30,7 @@ const initialCatalogue = [
         category: "reflection",
         tags: ["stoicism", "gratitude", "habit"],
         featured: true,
-        image: "/images/catalogue/item-4.jpg"
+        image: "/images/articles/item-4.jpg"
     },
     {
         id: "4",
@@ -39,7 +39,7 @@ const initialCatalogue = [
         category: "calm",
         tags: ["zen", "calm", "resilience"],
         featured: true,
-        image: "/images/catalogue/item-3.jpg"
+        image: "/images/articles/item-3.jpg"
     },
     {
         id: "5",
@@ -48,7 +48,7 @@ const initialCatalogue = [
         category: "presence",
         tags: ["mindfulness", "nature", "ritual"],
         featured: true,
-        image: "/images/catalogue/item-2.jpg"
+        image: "/images/articles/item-2.jpg"
     },
     {
         id: "6",
@@ -57,7 +57,7 @@ const initialCatalogue = [
         category: "discipline",
         tags: ["bushido", "self-awareness", "growth"],
         featured: false,
-        image: "/images/catalogue/item-12.jpg"
+        image: "/images/articles/item-12.jpg"
     },
     {
         id: "7",
@@ -66,7 +66,7 @@ const initialCatalogue = [
         category: "resilience",
         tags: ["stoicism", "grit", "mental clarity"],
         featured: false,
-        image: "/images/catalogue/item-11.jpg"
+        image: "/images/articles/item-11.jpg"
     },
     {
         id: "8",
@@ -75,7 +75,7 @@ const initialCatalogue = [
         category: "nutrition",
         tags: ["fasting", "clarity", "minimalism"],
         featured: false,
-        image: "/images/catalogue/item-6.jpg"
+        image: "/images/articles/item-6.jpg"
     },
     {
         id: "9",
@@ -84,7 +84,7 @@ const initialCatalogue = [
         category: "strength",
         tags: ["posture", "calisthenics", "movement"],
         featured: false,
-        image: "/images/catalogue/item-7.jpg"
+        image: "/images/articles/item-7.jpg"
     },
     {
         id: "10",
@@ -93,7 +93,7 @@ const initialCatalogue = [
         category: "focus",
         tags: ["visualisation", "mental rehearsal", "intention"],
         featured: false,
-        image: "/images/catalogue/item-10.jpg"
+        image: "/images/articles/item-10.jpg"
     },
     {
         id: "11",
@@ -102,7 +102,7 @@ const initialCatalogue = [
         category: "discipline",
         tags: ["resilience", "health", "willpower"],
         featured: false,
-        image: "/images/catalogue/item-8.jpg"
+        image: "/images/articles/item-8.jpg"
     },
     {
         id: "12",
@@ -111,25 +111,25 @@ const initialCatalogue = [
         category: "focus",
         tags: ["productivity", "mental clarity", "journaling"],
         featured: false,
-        image: "/images/catalogue/item-9.jpg"
+        image: "/images/articles/item-9.jpg"
     }, 
 ];
 
 
 // Writable store
-export const catalogue = writable(initialCatalogue);
+export const articles = writable(initialArticles);
 
 
 // Derived store: unique categories
-export const categories = derived(catalogue, $catalogue => {
-    const set = new Set($catalogue.map(item => item.category));
+export const categories = derived(articles, $articles => {
+    const set = new Set($articles.map(item => item.category));
     return Array.from(set).sort();
 });
 
 
 // Derived store: unique tags (flattened and sorted)
-export const tags = derived(catalogue, $catalogue => {
-    const allTags = $catalogue.flatMap(item => item.tags || []);
+export const tags = derived(articles, $articles => {
+    const allTags = $articles.flatMap(item => item.tags || []);
     const tagSet = new Set(allTags.map(tag => tag.trim().toLowerCase()));
     return Array.from(tagSet).sort();
 });

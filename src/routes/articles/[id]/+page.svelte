@@ -3,8 +3,8 @@
     import { fade } from 'svelte/transition';
     import { resolve, asset } from '$app/paths';
 	import { goto } from '$app/navigation';
-	import { catalogue } from '$lib/stores';
-	import { CatalogueCard } from '$lib/components';
+	import { articles } from '$lib/stores';
+	import { ArticleCard } from '$lib/components';
 
     // `data` is automatically provided by the load function from +page.js
     export let data;
@@ -20,7 +20,7 @@
 	$: { // Look up related items
 		const itemTags = new Set((item.tags || []).map(tag => tag.toLowerCase()));
 
-		relatedItems = $catalogue.filter(other => 
+		relatedItems = $articles.filter(other => 
 		{ // Filter out the current item
 			if (other.id === item.id) return false;
 			// Check if they share the same category
@@ -36,7 +36,7 @@
 
 
 <svelte:head>
-	<title>{item.title} | Catalogue</title>
+	<title>{item.title} | Articles</title>
 </svelte:head>
 
 
@@ -67,10 +67,10 @@
 					<button
 						type="button"
 						class="card-button"
-						on:click={() => goto(resolve('/catalogue/[title]', { title: item.title }))}
+						on:click={() => goto(resolve('/articles/[id]', { id: item.id }))}
 						aria-label={`View details for ${item.title}`}
 					>
-						<CatalogueCard
+						<ArticleCard
 							title={item.title}
 							description={item.description}
 							image={item.image}

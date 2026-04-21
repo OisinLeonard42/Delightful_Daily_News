@@ -2,8 +2,8 @@
     import { fade } from 'svelte/transition';
     import { resolve } from '$app/paths';
 	import { goto } from '$app/navigation';
-    import { CatalogueCard, Modal } from '$lib/components';
-    import { catalogue } from '$lib/stores/catalogueStore.js';
+    import { ArticleCard, Modal } from '$lib/components';
+    import { articles } from '$lib/stores/articlesStore.js';
     import { currentQuote, setRandomQuote } from '$lib/stores/quoteStore.js';
         import { asset } from '$app/paths';
     import { FlipCard } from '$lib/components';
@@ -22,7 +22,7 @@
 	 */
     let featuredItems = [];
 
-    $: $catalogue && (featuredItems = $catalogue.slice(0, 4));
+    $: $articles && (featuredItems = $articles.slice(0, 4));
 
     function openQuoteModal() {
         setRandomQuote();
@@ -43,7 +43,7 @@
      
     </section>
 
-    <!-- Featured Catalogue Section -->
+    <!-- Featured Articles Section -->
     <section class="featured">
         <h2>Featured Articles</h2>
         <div class="card-grid">
@@ -51,7 +51,7 @@
                <FlipCard {...item} theme="shinobi" />
             {/each}
         </div>
-        <a class="browse-link" href="{resolve('/catalogue')}">Browse Full Catalogue →</a>
+        <a class="browse-link" href="{resolve('/articles')}">Browse Full Articles →</a>
     </section>
 
     <!-- About Teaser Section -->

@@ -12,7 +12,7 @@
     <Navigation />
 </header>
 
-<header2 class="cataloge-container">
+<header2 class="articles-container">
   
 </header2>
 
