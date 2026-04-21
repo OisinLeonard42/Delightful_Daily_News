@@ -12,7 +12,7 @@ const initialCatalogue = [
         category: "movement",
         tags: ["mindfulness", "morning", "mobility"],
         featured: false,
-        image: "/images/catalogue/item-1.png"
+        image: "/images/catalogue/item-1.jpg"
     },
     {
         id: "2",
@@ -21,7 +21,7 @@ const initialCatalogue = [
         category: "focus",
         tags: ["focus", "discipline", "organisation"],
         featured: false,
-        image: "/images/catalogue/item-2.png"
+        image: "/images/catalogue/item-5.jpg"
     },
     {
         id: "3",
@@ -30,7 +30,7 @@ const initialCatalogue = [
         category: "reflection",
         tags: ["stoicism", "gratitude", "habit"],
         featured: true,
-        image: "/images/catalogue/item-3.png"
+        image: "/images/catalogue/item-4.jpg"
     },
     {
         id: "4",
@@ -39,25 +39,25 @@ const initialCatalogue = [
         category: "calm",
         tags: ["zen", "calm", "resilience"],
         featured: true,
-        image: "/images/catalogue/item-4.png"
+        image: "/images/catalogue/item-3.jpg"
     },
     {
         id: "5",
-        title: "Giant tortoises are returning to this Galápagos island nearly 150 years after they went extinct",
+        title: " Giant tortoises are returning to this Galápagos island nearly 150 years after they went extinct",
         description: "Nearly 150 years after the last giant tortoises were removed from Floreana Island in Ecuador’s Galápagos archipelago, the species made a comeback on 20 February, when dozens of juvenile hybrids were released to begin restoring the island’s depleted ecosystem.",
         category: "presence",
         tags: ["mindfulness", "nature", "ritual"],
         featured: true,
-        image: "/images/catalogue/item-5.png"
+        image: "/images/catalogue/item-2.jpg"
     },
     {
         id: "6",
-        title: "Weekly Reflection",
-        description: "A 7-question self-check aligned with the Bushidō virtues to build purpose and resolve.",
+        title: " Famous Youtuber Jacksepticeye Will Keep Bloodborne Movie's Tone As Close To The Game As Possible",
+        description: "Last month, Sony Pictures announced an animated adaptation of Bloodborne created in collaboration with Lyrical Animation. A surprising twist in the tale came when it was announced that Jacksepticeye would be producing the film.",
         category: "discipline",
         tags: ["bushido", "self-awareness", "growth"],
         featured: false,
-        image: "/images/catalogue/item-6.png"
+        image: "/images/catalogue/item-12.jpg"
     },
     {
         id: "7",
@@ -66,7 +66,7 @@ const initialCatalogue = [
         category: "resilience",
         tags: ["stoicism", "grit", "mental clarity"],
         featured: false,
-        image: "/images/catalogue/item-7.png"
+        image: "/images/catalogue/item-11.jpg"
     },
     {
         id: "8",
@@ -75,7 +75,7 @@ const initialCatalogue = [
         category: "nutrition",
         tags: ["fasting", "clarity", "minimalism"],
         featured: false,
-        image: "/images/catalogue/item-8.png"
+        image: "/images/catalogue/item-6.jpg"
     },
     {
         id: "9",
@@ -84,7 +84,7 @@ const initialCatalogue = [
         category: "strength",
         tags: ["posture", "calisthenics", "movement"],
         featured: false,
-        image: "/images/catalogue/item-9.png"
+        image: "/images/catalogue/item-7.jpg"
     },
     {
         id: "10",
@@ -93,7 +93,7 @@ const initialCatalogue = [
         category: "focus",
         tags: ["visualisation", "mental rehearsal", "intention"],
         featured: false,
-        image: "/images/catalogue/item-10.png"
+        image: "/images/catalogue/item-10.jpg"
     },
     {
         id: "11",
@@ -102,7 +102,7 @@ const initialCatalogue = [
         category: "discipline",
         tags: ["resilience", "health", "willpower"],
         featured: false,
-        image: "/images/catalogue/item-11.png"
+        image: "/images/catalogue/item-8.jpg"
     },
     {
         id: "12",
@@ -111,7 +111,7 @@ const initialCatalogue = [
         category: "focus",
         tags: ["productivity", "mental clarity", "journaling"],
         featured: false,
-        image: "/images/catalogue/item-12.png"
+        image: "/images/catalogue/item-9.jpg"
     }, 
 ];
 
