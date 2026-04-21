@@ -93,7 +93,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		background-image: url('/images/backgrounds/StarSky.jpg.jpg');
+		background-image: url('/images/backgrounds/StarSky.jpg');
         background-size: 2560px;
        /* background-repeat: repeat;*//*This will stop the image from repeating*/
 	    background-repeat: no-repeat; 
