@@ -19,10 +19,10 @@
     --color-error: #e76f51;      /* Terracotta Red */
 
     /* Neutral Greys for Text and UI */
-    --text-primary: #1e1e1e;      /* Main text */
-    --text-secondary: #444444;   /* UI, subtitles */
+    --text-primary: #030303;      /* Main text */
+    --text-secondary: #030303;   /* UI, subtitles */
     --text-tertiary: #777777;    /* Placeholder or muted text */
-    --text-contrast: #ffffff;    /* Light text on dark backgrounds */
+    --text-contrast: #f5eeee;    /* Light text on dark backgrounds */
 
     /* Backgrounds & Surfaces */
     --color-background: #92c4b5 ; /* Light parchment background */

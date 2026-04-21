@@ -58,7 +58,7 @@
      <h2>Showcase of Our Newsest Articles</h2>
         <div class="grid">
             <figure>
-                <img class="gaming" src={asset("/images/about/Lyndon-starlight-gaming-station.jpg")} alt="Mountain Shrine at Dawn" />
+                <img class="gaming" src={asset("/images/about/gaming.jpg")} alt="Mountain Shrine at Dawn" />
                 <figcaption>
                     Nintendo is Partnering With a Nonprofit to Bring Gaming Consoles to Hospitalized Kids.
                 </figcaption>
