@@ -1,10 +1,12 @@
 <script>
     import { asset } from '$app/paths';
+    import { resolve } from '$app/paths';
 
     export let title;
     export let description;
     export let icon = "";
     export let theme = 'default';
+    export let articleId = "0";
 </script>
 
 
@@ -19,6 +21,9 @@
     </div>
     <div class="card-face back">
         <p>{description}</p>
+        <p>Acess <a href={ resolve('/articles/[id]', { id: articleId })}>
+        here
+        </a></p>
     </div>
 </div>
 

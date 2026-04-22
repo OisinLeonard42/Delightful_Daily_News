@@ -1,6 +1,7 @@
 <script>
     import { asset } from '$app/paths';
     import { FlipCard } from '$lib/components';
+	import { articles } from '$lib/stores';
 
     const principles = [
        { title: 'William W. Purkey', description: 'You gotta dance like there nobodys watching love like you will never be hurt sing like there is nobody watching and live like it is heaven on earth.' },
@@ -12,12 +13,12 @@
     ];
 
     const virtues = [
-        { title: 'Nature', description: 'Do what is right by principle and justice.' },
-        { title: 'World', description: 'Face danger with bravery and honour.' },
-        { title: 'Sports', description: 'Show compassion and act for others.' },
-        { title: 'Space', description: 'Demonstrate courtesy and politeness.' },
-        { title: 'Animals', description: 'Speak truth and act with integrity.' },
-        { title: 'Gaming', description: 'Uphold your reputation and values.' },
+        { title: 'Nature', description: 'Do what is right by principle and justice.', articleId: "5"},
+        { title: 'World', description: 'Face danger with bravery and honour.', articleId: "1" },
+        { title: 'Sports', description: 'Show compassion and act for others.' , articleId: "12"},
+        { title: 'Space', description: 'Demonstrate courtesy and politeness.', articleId: "2" },
+        { title: 'Animals', description: 'Speak truth and act with integrity.', articleId: "11" },
+        { title: 'Gaming', description: 'Uphold your reputation and values.' , articleId: "6" },
     ];
 </script>
 

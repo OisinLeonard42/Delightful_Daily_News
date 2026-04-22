@@ -16,19 +16,18 @@
         </p>
         <p class="quote">
             “Even in failure, there is clarity.”<br />
-            <span>– Inspired by *bushidō* (誠 – Sincerity)</span>
+            <span>– Error Article Image not found</span>
         </p>
     {:else if error}
         <p class="message">{error.message}</p>
         <p class="quote">
-            “When the unexpected arises, meet it with calm.”<br />
-            <span>– Inspired by *ninshiki* (忍識 – Awareness)</span>
+        <br />
+            <span>–Error please try again</span>
         </p>
     {:else}
         <p class="message">An unknown error occurred. Please try again.</p>
         <p class="quote">
-            “The obstacle is the path.”<br />
-            <span>– Zen proverb</span>
+            “Please check your interent connection ”<br />
         </p>
     {/if}
 
