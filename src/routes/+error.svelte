@@ -27,6 +27,7 @@
     {:else}
         <p class="message">An unknown error occurred. Please try again.</p>
         <p class="quote">
+        <br>
             “Please check your interent connection ”<br />
         </p>
     {/if}
