@@ -101,29 +101,6 @@
         margin-bottom: var(--space-sm);
     }
 
-    .subheading {
-        font-size: var(--font-lg);
-        font-family: var(--font-body);
-        color: var(--text-secondary);
-        margin-bottom: var(--space-md);
-    }
-
-    .inspire-button {
-        padding: var(--space-sm) var(--space-lg);
-        background-color: var(--color-accent);
-        color: var(--text-contrast);
-        font-size: var(--font-base);
-        font-weight: 600;
-        border: none;
-        border-radius: var(--radius-sm);
-        cursor: pointer;
-        transition: background-color var(--transition-fast);
-    }
-
-    .inspire-button:hover,
-    .inspire-button:focus {
-        background-color: var(--color-highlight);
-    }
 
     /* Featured Section */
     .featured {
@@ -141,19 +118,7 @@
         margin-bottom: var(--space-lg);
     }
 
-	/* Ensure button styling doesn’t interfere */
-	.card-button {
-		all: unset; /* Remove default button styles */
-		cursor: pointer;
-		display: block;
-		text-align: inherit;
-	}
-
-	.card-button:focus-visible {
-		outline: 2px solid var(--color-accent);
-		outline-offset: 4px;
-	}
-
+	
     .card-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

@@ -6,7 +6,7 @@
     export let description;
     export let icon = "";
     export let theme = 'default';
-    export let articleId = "0";
+    export let articleId = "1";
 </script>
 
 
