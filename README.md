@@ -46,3 +46,9 @@ Cody:
 - researhed, sourced and created extracts of page content {static -> images -> information-News}
 
 - Chose site UI layout
+
+Oisin:
+- created the page layout for the Home, Article, About us page.
+- created clickable links to the articles in the about us page.
+- created design layout for the pages.
+- added in examples of articles in the about us page and in the home page.

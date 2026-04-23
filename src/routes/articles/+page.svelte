@@ -74,8 +74,8 @@
             <label class="sort-select">
                 <span role="img" aria-label="Sort">⇅</span>
                 <select bind:value={sortBy} aria-label="Sort by">
-                    <option value="title">Sort by Title</option>
-                    <option value="category">Sort by Category</option>
+                    <option value="title">Sort by Favourite</option>
+                    <option value="category">Sort by Article</option>
                 </select>
             </label>
 

@@ -41,7 +41,7 @@
         <h2>7 inspritation quotes</h2>
         <div class="principle-grid">
             {#each principles as principle}
-                <FlipCard {...principle} theme="shinobi" />
+                <FlipCard {...principle} theme="shinobi" articleId="-1" />
             {/each}
         </div>
     </section>

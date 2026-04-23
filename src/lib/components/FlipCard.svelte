@@ -21,9 +21,11 @@
     </div>
     <div class="card-face back">
         <p>{description}</p>
-        <p>Acess <a href={ resolve('/articles/[id]', { id: articleId })}>
-        here
-        </a></p>
+        {#if articleId !== "-1"}
+            <p>Acess <a href={ resolve('/articles/[id]', { id: articleId })}>
+            here
+            </a></p>
+        {/if}
     </div>
 </div>
 
