@@ -52,3 +52,4 @@ Oisin:
 - created clickable links to the articles in the about us page.
 - created design layout for the pages.
 - added in examples of articles in the about us page and in the home page.
+- added in the articles and the content in them.

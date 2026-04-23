@@ -4,9 +4,11 @@
 
     export let title;
     export let description;
+    export let news;
     export let icon = "";
     export let theme = 'default';
     export let articleId = "1";
+   
 </script>
 
 

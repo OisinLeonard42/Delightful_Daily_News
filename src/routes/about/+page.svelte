@@ -13,12 +13,12 @@
     ];
 
     const virtues = [
-        { title: 'Nature', description: 'Do what is right by principle and justice.', articleId: "5"},
-        { title: 'World', description: 'Face danger with bravery and honour.', articleId: "1" },
-        { title: 'Sports', description: 'Show compassion and act for others.' , articleId: "12"},
-        { title: 'Space', description: 'Demonstrate courtesy and politeness.', articleId: "2" },
-        { title: 'Animals', description: 'Speak truth and act with integrity.', articleId: "11" },
-        { title: 'Gaming', description: 'Uphold your reputation and values.' , articleId: "6" },
+        { title: 'Nature', description: 'Endangered Cahow, One of the Rarest Seabirds in the World, Hatched on Nonsuch Island in Bermuda.', articleId: "5"},
+        { title: 'World', description: 'Priceless Golden Helmet from 2,500 Years Ago Recovered After it Was Stolen from Museum in January.', articleId: "1" },
+        { title: 'Sports', description: 'Malala Yousafzai and Billie Jean King Partner Up To Promote Women’s Sports, and Invest in WNBA and NWSL.' , articleId: "12"},
+        { title: 'Space', description: 'Nearby Star Seen ‘Blowing Bubbles’ for the First Time in New Image from Chandra Telescope', articleId: "2" },
+        { title: 'Animals', description: 'Aquarium Seal Loves His Rubber Duckie And Now Adorable Video Goes Viral.', articleId: "11" },
+        { title: 'Gaming', description: 'Famous Youtuber Jacksepticeye Will Keep Bloodborne Movie to Tone As Close To The Game As Possible.' , articleId: "6" },
     ];
 </script>
 
@@ -167,15 +167,15 @@
     }
     .gaming{
     width: 400px;
-    height: 630px;
+    height: 500px;
     }
      .volunteers{
     width: 400px;
-    height: 630px;
+    height: 500px;
     }
       .bees{
     width: 400px;
-    height: 630px;
+    height: 500px;
     }
 
     /* Section: Quote or Reflection */

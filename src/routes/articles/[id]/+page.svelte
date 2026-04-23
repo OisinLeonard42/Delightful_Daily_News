@@ -47,6 +47,9 @@
 		<h1>{item.title}</h1>
 		<p class="category">{item.category}</p>
 		<p class="description">{item.description}</p>
+		<p class="news">{item.news}</p>
+	
+		
 
 		{#if item.tags.length}
 			<ul class="tags">
@@ -75,6 +78,7 @@
 							description={item.description}
 							image={item.image}
 							category={item.category}
+							news={item.news}
 							tags={item.tags}
                         	animationDelay={index * 100}
 						/>

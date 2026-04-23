@@ -7,10 +7,13 @@
     export let category = 'Uncategorised';
     /** @type {string | any[]} */
     export let tags = [];
+    export let news = 'Empty Placeholder text';
     export let animationDelay = 0;
+
     let expanded = false;
-    
+
     $: isLong = description.length > 120;
+    $: isLong2 = news.length > 120;
 </script>
 
 <article class="card" aria-label={`Card: ${title}`} style="animation-delay: {animationDelay}ms;">
@@ -28,6 +31,14 @@
             {:else}
                 {description.substring(0, 120)}…
             {/if}
+        </p>
+
+        <p class="news">
+{#if expanded || !isLong2}
+    {news}
+    {:else}
+    {news.substring(0,120)}…
+{/if}
         </p>
 
         {#if isLong}
@@ -103,6 +114,10 @@
 
     .description {
         font-size: var(--font-base);
+        color: var(--text-secondary);
+    }
+    .news{
+         font-size: var(--font-base);
         color: var(--text-secondary);
     }
 

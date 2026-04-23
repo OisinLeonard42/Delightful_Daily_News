@@ -100,6 +100,7 @@
                             description={item.description}
                             image={item.image}
                             category={item.category}
+                            news={item.news}
                             tags={item.tags}
                             animationDelay={index * 80}
                         />
